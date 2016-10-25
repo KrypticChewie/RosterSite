@@ -296,7 +296,7 @@ function test()
         document.getElementById("hide4ClkPrac").checked = true;
         togRoster("#tbl4Clerks");
         
-        //Hide
+        //Hide practical roster on load
         document.getElementById("hidePractical").checked = true;
         hidePrac(true);
 
