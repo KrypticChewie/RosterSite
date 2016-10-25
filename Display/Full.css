@@ -1,0 +1,359 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 6, 2016, 11:56:21 AM
+    Author     : KrypticChewie
+*/
+
+
+@media screen, print
+{
+        h1
+        {
+                /*text-align: center;*/
+        }
+
+        table, th, td
+        {
+                border: 1px solid black;
+                border-collapse: collapse;
+        }
+
+        th, td
+        {
+                text-align: center;
+                padding: 5px;
+                min-width: 5em;
+        }
+
+        .clName
+        {
+                text-align: right;
+        }
+
+        .posTitle
+        {
+
+        }
+
+        .tblWeek, .tblHWeek
+        {
+                /*border: 1px solid black;*/
+                padding: 0.5em;
+        }
+
+        .tblWeek, #secExplan
+        {
+                float: left;
+                /*clear: left;*/
+        }
+
+        .divExplain
+        {
+                padding: 1em 2em 1em 0em;
+                display: inline-block;
+        }
+
+        table caption
+        {
+                text-align: left;
+                font-size: x-large;
+                font-weight: bold;
+                padding-bottom: 0.5em;
+        }
+
+        .removeAway, #rosterControlsx
+        {
+                display: none;				
+        }
+
+        div.tblWeek>table>caption:after
+        {
+                content: " (Practical)";
+        }
+
+        div.tblWeekP>table>caption:after
+        {
+                content: " (Practical) (Proposed)";
+        }
+
+        div.tblHWeek>table>caption:after
+        {
+                content: " (Official)";
+        }
+
+        div.tblHWeekP>table>caption:after
+        {
+                content: " (Official) (Estimated)";
+        }
+
+        .hideAway
+        {
+                visibility:hidden;
+        }
+
+        .weekDiv
+        {
+                border: 1px solid black;
+        }
+
+        .weekDivOld
+        {
+                /*display: none;*/
+        }
+
+        /* Temp Clerks */
+
+        .clkRR /*Rachael Ragoonath*/
+        {
+                /*display: none;*/
+        }
+
+        .clkSS /*Shereen Sankar*/
+        {
+                /*display: none;*/
+        }
+
+        .clkKD /*Kris Deen*/
+        {
+                /*display: none;*/
+        }
+
+        .clkDH /*Dionne Hopkins*/
+        {
+                /*display: none;*/
+        }
+
+        .clkAB /*Andrew Bascombe*/
+        {
+                /*display: none;*/
+        }
+
+        .clkME /*Michael Ellis*/
+        {
+                /*display: none;*/
+        }
+
+        .clkMB /*Mark Blackman*/
+        {
+                /*display: none;*/
+        }
+        
+        .clkRK /*Roland Kawal*/
+        {
+                /*display: none;*/
+        }
+        
+        .clkNA /*Not Assigned*/
+        {
+                /*display: none;*/
+        }
+
+        /* Perm Clerks */
+
+        .clkSN /*Sean Nanton*/
+        {
+                /*display: none;*/
+        }
+
+        /* Perm Other */
+
+        .clkMM /*Marla Maraj*/
+        {
+                /*display: none;*/
+        }
+
+        /*Specific Rosters*/
+
+        #tbl4Clerks
+        {
+                /*display: none;*/
+        }
+        #tbl5Clerks
+        {
+                /*display: none;*/
+        }
+        #tblHateClerks
+        {
+                /*display: none;*/
+        }
+
+        #todayDate>p
+        {
+                font-size: x-large;
+                font-weight: bold;
+        }
+
+        .disChk
+        {
+                border: 1px dotted grey;
+                margin: 0.5em 0em;
+        }
+}
+
+@media screen
+{
+        th
+        {
+                background-color: darkslategray;
+                color: white;
+        }
+        tr:nth-child(odd)
+        {
+                background-color: darkslategray;
+        }
+        tr:nth-child(even)
+        {
+                background-color: dimgrey;
+        }
+        tr:hover
+        {
+                font-weight: bold;
+        }
+        .empHead
+        {
+                background-color: white;
+        }
+        .offDay
+        {
+                /* Off Day */
+                /*background-color: PaleGreen;*/
+                color: PaleGreen;
+        }
+        .pmDay
+        {
+                /* Evening Day */
+                /*background-color: Cyan;*/
+                color: Cyan;
+        }
+        .allDay
+        {
+                /* All Day */
+                /*background-color: LightSalmon;*/
+                color: LightSalmon;
+        }
+        .opDay
+        {
+                /* Orders and Permits Day */
+                /*background-color: Yellow;*/
+                color: Yellow;
+        }
+        .invDay
+        {
+                /* Invoicing Day */
+                /*background-color: Plum;*/
+                color: Plum;
+        }
+        .iopDay
+        {
+                /* Invoicing Orders and Permits Day */
+                /*background-color: Orange;*/
+                color: Orange;
+        }
+        .holiday
+        {
+                /* Holiday */
+                color: OrangeRed;
+        }
+        .acDay
+        {
+                /* Assistant Cashing Day */
+                /*background-color: Silver;*/
+                color: Silver;
+        }
+        .acPMDay
+        {
+                /* Assistant Cashing PM Day */
+                /*background-color: Grey;*/
+                color: Grey;
+        }
+        .bsDay
+        {
+                /* Bulk Stock Supervisor */
+                color: Blue;
+        }
+        .onBreak
+        {
+                /* On Break */
+                /*background-color: Pink;*/
+                color: Pink;
+        }
+        .recDay
+        {
+                /* Recon day */
+                /*background-color: LightBlue;*/
+                color: LightBlue;
+        }
+        .irDay
+        {
+                /* Invoicing and recon day */
+                /*background-color: DeepSkyBlue;*/
+                color: DeepSkyBlue;
+        }
+        .saDay
+        {
+                /* Special Assignment */
+                /*background-color: LemonChiffon;*/
+                color: LemonChiffon
+        }
+        .saAllDay
+        {
+                /*Special Assignment and evening OT*/
+                /*background-color: LightSalmon;*/
+                color: LightSalmon;
+        }
+        .papDay
+        {
+                /* P-A-P Day */
+                /*background-color: SpringGreen;*/
+                color: SpringGreen;
+        }
+        .leave
+        {
+                /* Annual leave */
+                /*background-color: lightpink;*/
+                color: lightpink;
+        }
+        .adDay
+        {
+                /* Administrative Day */
+                /*background-color: Yellow;*/
+                color: Yellow;
+        }
+        .otDay
+        {
+                font-style: italic;
+                text-decoration: underline;
+        }
+        .currentWeek
+        {
+                text-decoration: underline;
+                color: blue;
+        }
+
+        /* For the groupings descriptions for the clerks */
+        .fieldOthTxt
+        {
+                color:blue;
+                font-style:italic;
+        }
+}
+
+@media print
+{
+        .tblWeek, .tblHWeek {page-break-inside:avoid;}
+        .noPrint, .noPrint * {display: none !important;}
+
+        .offDay
+        {
+                font-weight: bold;
+        }
+
+        .holiday
+        {
+                font-style:italic;
+        }
+}
