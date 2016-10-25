@@ -295,6 +295,10 @@ function test()
         togRoster("#tblHateClerks");
         document.getElementById("hide4ClkPrac").checked = true;
         togRoster("#tbl4Clerks");
+        
+        //Hide
+        document.getElementById("hidePractical").checked = true;
+        hidePrac(true);
 
         //Hide old roster week on load
         document.getElementById("showOld").checked = false;
