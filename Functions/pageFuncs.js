@@ -161,19 +161,29 @@ function togClk(clk)
 
 function togRoster(roster)
 {
-        var ruleIndex = findCSSRule(getCSSSheet(rosterStyle), roster);
-
-        var test = getCSSSheet(rosterStyle).cssRules;
-
-
-        if (ruleIndex < 0)
+        if(document.getElementById(roster).style.display === "none" || document.getElementById(roster).style.display === "")
         {
-                addCSSRule(getCSSSheet(rosterStyle), roster, "display: none;");
+            document.getElementById(roster).style.display = "inline";
         }
         else
         {
-                removeCSSRule(getCSSSheet(rosterStyle), findCSSRule(getCSSSheet(rosterStyle), roster));
+            document.getElementById(roster).style.display = "none";
         }
+    
+    
+//        var ruleIndex = findCSSRule(getCSSSheet(rosterStyle), roster);
+//
+//        var test = getCSSSheet(rosterStyle).cssRules;
+//
+//
+//        if (ruleIndex < 0)
+//        {
+//                addCSSRule(getCSSSheet(rosterStyle), roster, "display: none;");
+//        }
+//        else
+//        {
+//                removeCSSRule(getCSSSheet(rosterStyle), findCSSRule(getCSSSheet(rosterStyle), roster));
+//        }
 }
 
 function togVisible(element, styleSheet)
@@ -289,12 +299,14 @@ function setCurrentWeek(linkTagId, linkLoc, weekDivName, captionClass)
 function test()
 {
         //Hide roster plans on load
-        document.getElementById("hide5ClkPrac").checked = true;
-        togRoster("#tbl5Clerks");
-        document.getElementById("hide4ClkOff").checked = true;
-        togRoster("#tblHateClerks");
-        document.getElementById("hide4ClkPrac").checked = true;
-        togRoster("#tbl4Clerks");
+        
+        //document.getElementById("hide4ClkPrac").checked = true;
+        //togRoster("#tbl4Clerks");
+        //document.getElementById("hide4ClkOff").checked = true;
+        //togRoster("#tblHateClerks");
+        //document.getElementById("hide5ClkPrac").checked = true;
+        //togRoster("#tbl5Clerks");
+        
         
         //Hide practical roster on load
         document.getElementById("hidePractical").checked = true;
