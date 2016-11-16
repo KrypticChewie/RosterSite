@@ -170,17 +170,18 @@ and open the template in the editor.
 
         #tbl4Clerks
         {
-                /*display: none;*/
-        }
-        #tbl5Clerks
-        {
-                /*display: none;*/
+                display: none;
         }
         #tblHateClerks
         {
-                /*display: none;*/
+                display: none;
         }
-
+        #tbl5Clerks
+        {
+                display: none;
+        }
+        
+        
         #todayDate>p
         {
                 font-size: x-large;
