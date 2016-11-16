@@ -31,6 +31,7 @@
                                                     Moved CSS to separate files.
                                                     Moved Java Script to separate file.
 		Version 3.0.1	(Rev 2016/10/25) Set practical roster as hidden on load.
+ 		Version 3.0.2	(Rev 2016/11/16) Set roster plans as hidden by default in CSS.  Now browsers without JavaScript enabled won't see them.
 		
 		TODO:
 		Hide employees by group.
@@ -39,7 +40,7 @@
 	<head>
 		<meta charset="UTF-8">
                 
-                <title>NP Distribution Roster v3.0.1</title>
+                <title>NP Distribution Roster v3.0.2</title>
                 
                 <meta name="description" content="The Distribution Clerk roster">
                 <meta name="author" content="Kris Deen">
@@ -79,13 +80,13 @@
 			<fieldset id ="fmeRosterPlDspSel">
 				<legend title="Select which rosters plans to be displayed.">Roster plan display selection</legend>
 				
-				<input type="checkbox" id="hide4ClkPrac" name="hide4ClkPrac" value="#tbl4Clerks" onclick="togRoster(this.value)" title="Select to hide 4 clerk practical roster"/>
+				<input type="checkbox" id="hide4ClkPrac" name="hide4ClkPrac" value="tbl4Clerks" onclick="togRoster(this.value)" title="Select to hide 4 clerk practical roster" checked="checked"/>
 				<label id="lblHide4ClkPrac" for="hide4ClkPrac" accesskey="o" title="Select to hide 4 clerk practical roster">Hide <span class="accKey">4</span> Clerk Practical Roster</label>
 				
-				<input type="checkbox" id="hide4ClkOff" name="hide4ClkOff" value="#tblHateClerks" onclick="togRoster(this.value)" title="Select to hide 4 clerk official roster"/>
+				<input type="checkbox" id="hide4ClkOff" name="hide4ClkOff" value="tblHateClerks" onclick="togRoster(this.value)" title="Select to hide 4 clerk official roster" checked="checked"/>
 				<label id="lblHide4ClkOff" for="hide4ClkOff" accesskey="o" title="Select to hide 4 clerk official roster">Hide 4 C<span class="accKey">l</span>erk Official Roster</label>
 				
-				<input type="checkbox" id="hide5ClkPrac" name="hide5ClkPrac" value="#tbl5Clerks" onclick="togRoster(this.value)" title="Select to hide 5 clerk practical roster"/>
+				<input type="checkbox" id="hide5ClkPrac" name="hide5ClkPrac" value="tbl5Clerks" onclick="togRoster(this.value)" title="Select to hide 5 clerk practical roster" checked="checked"/>
 				<label id="lblHide5ClkPrac" for="hide5ClkPrac" accesskey="o" title="Select to hide 5 clerk practical roster">Hide <span class="accKey">5</span> Clerk Practical Roster</label>
 			</fieldset>
 		</div>
