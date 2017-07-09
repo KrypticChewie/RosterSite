@@ -325,6 +325,6 @@ function test()
 }
 
 //Global variable for start date of roster
-var startDate = new Date(2017, 4-1, 02);
+var startDate = new Date(2017, 7-1, 02);
 
 //]]>
